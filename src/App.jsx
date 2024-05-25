@@ -10,14 +10,7 @@ export default function App() {
   // This is a GsAP Sliders in react
 
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      const t1 = gsap.timeline()
-      t1.from("#intro-slider", {
-        xPercent: "-100",
-        duration: 1.3,
-        delay: 0.3,
-      })
+
         .from(["#title-1", "#title-2", "#title-3"], {
           opacity: 0,
           y: "+=30",
